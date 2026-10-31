@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Eventos y Reservas · Café Rococó</title><meta name="description" content="Reserva tu mesa o una experiencia en el salón de Café Rococó."><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface-variant":"#4f4445","secondary":"#37656b","primary-container":"#fadadd","warm-taupe":"#7A6B65","on-tertiary-fixed":"#002105","on-secondary":"#ffffff","surface":"#fefccf","error-container":"#ffdad6","on-background":"#1d1d03","on-secondary-fixed-variant":"#1d4d53","surface-variant":"#e6e5b9","secondary-fixed":"#bbebf1","espresso-noir":"#2D2422","inverse-surface":"#323214","on-primary-fixed":"#281719","tertiary-container":"#92f993","secondary-container":"#b8e8ee","surface-dim":"#dedcb1","outline":"#807475","background":"#fefccf","surface-container":"#f2f0c4","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-container-highest":"#e6e5b9","on-primary-fixed-variant":"#574144","surface-tint":"#70585b","primary-fixed":"#fbdbde","gilded-bright":"#FFD700","outline-variant":"#d2c3c4","tertiary":"#006e20","on-tertiary-container":"#007422","on-tertiary-fixed-variant":"#005316","tertiary-fixed":"#93f993","error":"#ba1a1a","porcelain-lavender":"#E6E6FA","secondary-fixed-dim":"#9fcfd5","on-secondary-fixed":"#001f23","on-error-container":"#93000a","parchment-border":"#EADEC9","inverse-on-surface":"#f5f3c7","surface-container-high":"#eceabe","tertiary-fixed-dim":"#77dc7a","on-error":"#ffffff","on-primary-container":"#765e61","primary":"#70585b","inverse-primary":"#debfc2","on-surface":"#1d1d03","on-secondary-container":"#3b6a6f","surface-bright":"#fefccf","surface-container-low":"#f8f6c9","on-tertiary":"#ffffff","gilded-gold":"#D4AF37","primary-fixed-dim":"#debfc2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-xs":"0.25rem","margin":"3rem","gutter":"1.5rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg":["Playfair Display"],"display-hero":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"body-md":["EB Garamond"],"label-sm":["Plus Jakarta Sans"],"body-lg":["EB Garamond"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"body-sm":["EB Garamond"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"headline-md":["Playfair Display"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"46px","fontWeight":"500"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["17px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"500"}],"body-lg":["20px",{"lineHeight":"32px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"500"}],"body-sm":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-espresso-noir"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_12px_36px_-8px_rgba(45,36,34,0.08)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Café Rococó Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDROi57G5pizNj8hE-WLCTyKhMIXsnie4I5uRC18YCbZbZDZ25xax2e6nSFV3lkIiKKiEhRF-5rcjn-qCPVVOVpua8jFVFV_f1RIg4Pl1GdS8tn0XvT3m7PZvWI8rOWECwmI6Fnh5Imf3WBGSH9Fdl7lL5ROG-RN-QA8AqE5qiE4umJAhGLWrA3QJ1bhymAl_EdQMrcQpdf-3d7jE0mhAveryr-CfIqI0eerlX-UbE"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-espresso-noir tracking-wider leading-none">Café Rococó</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">Atelier de Café</span></div></div><nav class="hidden xl:flex items-center gap-space-md bg-surface-container-low/70 px-space-md py-space-xs rounded-full shadow-[0_2px_12px_rgba(45,36,34,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-path="inicio" href="index.html">Inicio</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-path="menu" href="menu.html">Menú</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-path="nosotros" href="nosotros.html">Nosotros</a><a aria-current="page" class="px-space-md py-space-xs uppercase tracking-wider transition-all bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="eventos-y-reservas" href="eventos-y-reservas.html">Eventos y Reservas</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-path="ubicacion-y-contacto" href="ubicacion-y-contacto.html">Ubicación y Contacto</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-full bg-primary-container text-espresso-noir font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(212,175,55,0.25)] hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" data-path="eventos-y-reservas" href="eventos-y-reservas.html">Reservar Mesa</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Ornaments -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 -right-20 w-80 h-80 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Editorial Header & Introduction Section -->
+<section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin pt-space-lg pb-space-xl w-full">
+<div class="flex flex-col lg:flex-row items-baseline justify-between gap-gutter">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-sm">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Salón de Recreo • Temporada 1740</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-espresso-noir tracking-tight">
+            Experiencias Privadas &amp; Reserva de Mesa
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
+            Consagre su estancia entre espejos biselados, tazas de porcelana fina y la cadencia sosegada de las mejores cosechas del orbe. Seleccione una tertulia temática o garantice su asiento en nuestro salón principal.
+          </p>
+</div>
+<div class="flex flex-col items-start lg:items-end gap-space-xs">
+<div class="px-space-md py-space-xs rounded-full bg-surface-container-high text-espresso-noir font-label-md text-label-md flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="">Aforo Máximo: 28 Asientos de Terciopelo</span>
+</div>
+<span class="font-label-sm text-label-sm text-warm-taupe italic">
+            Atención meticulosa bajo reserva previa
+          </span>
+</div>
+</div>
+<!-- Rocaille Decorative Flourish SVG -->
+<div class="w-full flex items-center justify-center my-space-lg">
+<svg class="w-48 h-8 text-warm-taupe/40" fill="currentColor" viewBox="0 0 200 30">
+<path d="M100 15 C85 5, 70 25, 45 15 C30 9, 20 20, 0 15 C20 10, 30 21, 45 15 C70 5, 85 25, 100 15 Z"></path>
+<path d="M100 15 C115 5, 130 25, 155 15 C170 9, 180 20, 200 15 C180 10, 170 21, 155 15 C130 5, 115 25, 100 15 Z"></path>
+<circle class="text-gilded-gold fill-current" cx="100" cy="15" r="3.5"></circle>
+</svg>
+</div>
+</section>
+<!-- SECTION 1: Cartelera de Actividades & Experiencias Exclusivas -->
+<section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin pb-space-xl w-full">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">Tertulias Exclusivas</span>
+<h2 class="font-headline-md text-headline-md text-espresso-noir">Cartelera de la Estación</h2>
+</div>
+<div class="hidden md:flex items-center gap-space-sm text-warm-taupe font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Cupos limitados por velada
+        </div>
+</div>
+<!-- Asymmetric Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter items-stretch">
+<!-- Experience 1: Cata Sensorial a Ciegas -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-md p-space-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-space-md">
+<img alt="An ornate French 18th century salon table with porcelain tasting cups, roasted specialty coffee beans, blindfolds of embroidered rose silk, warm pastel ivory tones, gilded candelabras, soft atmospheric lighting, rococo aesthetic." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An ornate French 18th century salon table with porcelain tasting cups, roasted specialty coffee beans, blindfolds of embroidered rose silk, warm pastel ivory tones, gilded candelabras, soft atmospheric lighting, rococo aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBPZNCY89b0BeJee1kPrZZ_674hyy16fOmT3SVWyuXOdcFKvXH1aUmQYvi1HeWyIs4_M4g9qJgpmGuvoPD5AHT2LLzgrfFZeSxAXxnqiCnIT9FN20DwiSdBWKJ0EVcPgo8h4c_nzE9xyTdCgAY0vFX8GbwFvkIxYYE7h_jcbbELpDWXdaairNmf-xHzb0WOK9vr3n7JV065zc_2coWqm5jLV8gJ0n8wRVVRO88ItQ">
+<div class="absolute top-space-xs right-space-xs bg-espresso-noir/80 text-surface-container-lowest backdrop-blur-sm px-space-sm py-0.5 rounded-full font-label-sm text-label-sm tracking-widest uppercase">
+              6 Cupos
+            </div>
+<div class="absolute bottom-space-xs left-space-xs bg-primary-container text-espresso-noir px-space-sm py-0.5 rounded-full font-label-md text-label-md shadow-sm">
+              Cata Especial
+            </div>
+</div>
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Jueves, 12 Octubre • 19:00</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-espresso-noir mb-space-xs">
+            Cata Sensorial a Ciegas
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-space-md">
+            Un velo de seda cubre la mirada para despertar el paladar con cinco microlotes de altura de Geisha y Bourbon Rosa en tazas Limoges.
+          </p>
+<div class="pt-space-sm mt-auto flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-espresso-noir">$95.000<span class="font-body-sm text-body-sm text-warm-taupe"> /pers.</span></span>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-espresso-noir font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" onclick="prefillExperience('Cata Sensorial a Ciegas')">
+              Inscribirme
+            </button>
+</div>
+</div>
+<!-- Experience 2: Masterclass de Arte Latte & Cisnes -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-md p-space-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl lg:mt-6 group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-space-md">
+<img alt="A vintage brass espresso machine pouring textured milk into a wide pastel ceramic cup forming an intricate swan latte art pattern, surrounded by powdered sugar, delicate macarons, pastel floral bouquets, soft warm lighting." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A vintage brass espresso machine pouring textured milk into a wide pastel ceramic cup forming an intricate swan latte art pattern, surrounded by powdered sugar, delicate macarons, pastel floral bouquets, soft warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiO6zFNkpoOcNtNW6LB2NBfdPFQ1T_bmPp9xYf9zBRV4nviYhejINcL8Gqo0hi7mIaCug61Mqd5N17kJ5zsOA4gFLJaToRaIXzK24GERCTM_W4f5_s06lXDOKA7a3zcTe1ik09xpot2DFypV_eWYKVMDo4Gk8e94cWMGqfzpaKN3BBY8TmryQW8uleq2ZaSm_zbWZQHqN6r1t5wmqVJ_7gESbt442sQR5_HzncexE">
+<div class="absolute top-space-xs right-space-xs bg-espresso-noir/80 text-surface-container-lowest backdrop-blur-sm px-space-sm py-0.5 rounded-full font-label-sm text-label-sm tracking-widest uppercase">
+              4 Cupos
+            </div>
+<div class="absolute bottom-space-xs left-space-xs bg-secondary-container text-espresso-noir px-space-sm py-0.5 rounded-full font-label-md text-label-md shadow-sm">
+              Taller Práctico
+            </div>
+</div>
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Sábado, 21 Octubre • 10:30</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-espresso-noir mb-space-xs">
+            Masterclass: Cisnes &amp; Volutas
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-space-md">
+            Aprenda la técnica del texturizado sedoso y los vertidos ornamentales de rosetas y cisnes con nuestro Barista Campeón de Salón.
+          </p>
+<div class="pt-space-sm mt-auto flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-espresso-noir">$130.000<span class="font-body-sm text-body-sm text-warm-taupe"> /pers.</span></span>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-espresso-noir font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" onclick="prefillExperience('Masterclass: Cisnes &amp; Volutas')">
+              Inscribirme
+            </button>
+</div>
+</div>
+<!-- Experience 3: Tarde de Clavecín & Repostería Francesa -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-md p-space-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-space-md">
+<img alt="Close up of a harpsichord instrument beside silver stands filled with French mille-feuille, delicate choux pastries, and steaming bone-china coffee cups, in a warm rococo salon with gilded wood carvings." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a harpsichord instrument beside silver stands filled with French mille-feuille, delicate choux pastries, and steaming bone-china coffee cups, in a warm rococo salon with gilded wood carvings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD3ofRrJ82eVPhoSTIPvciWJ3ammU_hr-xV8zZ8z59Z7OqrquWR8123suapi-OPKBqiZikIxROr4OohM1qMp5OPbHs6B6qsfJ6Ii5itWRoyzcf0FHDrIEZieHCqseFVr0aIx4MB_isX0MxjDw6kSSH-SoQ5nlQqvYJq9l5RHwr_-1vDFHwz8s2_W4-7i0MutFmpEfosVRn90e4W86HoB5PIrJROBExauoNh4OAjmg">
+<div class="absolute top-space-xs right-space-xs bg-espresso-noir/80 text-surface-container-lowest backdrop-blur-sm px-space-sm py-0.5 rounded-full font-label-sm text-label-sm tracking-widest uppercase">
+              10 Cupos
+            </div>
+<div class="absolute bottom-space-xs left-space-xs bg-primary-fixed text-on-primary-fixed px-space-sm py-0.5 rounded-full font-label-md text-label-md shadow-sm">
+              Concierto &amp; Té
+            </div>
+</div>
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Domingo, 29 Octubre • 17:00</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-espresso-noir mb-space-xs">
+            Clavecín &amp; Patisserie
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-space-md">
+            Sonatas barrocas en directo acompañadas por un menú degustación de tres postres clásicos franceses y cafés infusionados al vacío.
+          </p>
+<div class="pt-space-sm mt-auto flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-espresso-noir">$112.500<span class="font-body-sm text-body-sm text-warm-taupe"> /pers.</span></span>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-espresso-noir font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" onclick="prefillExperience('Clavecín &amp; Patisserie')">
+              Inscribirme
+            </button>
+</div>
+</div>
+<!-- Experience 4: Taller de Métodos de Filtrado en Casa -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-md p-space-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl lg:mt-6 group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-space-md">
+<img alt="Artisanal pour over coffee brewing setup with V60, Chemex, elegant copper kettle pouring hot water with steam rising, delicate wooden apothecary jars of single-origin coffee beans, bright and cozy rococo morning light." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artisanal pour over coffee brewing setup with V60, Chemex, elegant copper kettle pouring hot water with steam rising, delicate wooden apothecary jars of single-origin coffee beans, bright and cozy rococo morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgSTJ_k6RDdQ86b8oGhaFxmtX6K8nzXLg0c8Y42IXczkAJBKyORSLR23DRend2vN48nwCBGCE1KGgLSiMFhrzMuqesu8kadMH0zYlcR7n88AmaZ6GRD57jFKIOBewhGzrzruwoSbGLkCyw57Nh2jHLirLAgXrRfU-z9_wGJZFuwKt-prMYBb7ykrNh6L0khwM29jx9bAV81A0p5gNwNyWsywjFC5KyZVdkodVkpxo">
+<div class="absolute top-space-xs right-space-xs bg-espresso-noir/80 text-surface-container-lowest backdrop-blur-sm px-space-sm py-0.5 rounded-full font-label-sm text-label-sm tracking-widest uppercase">
+              5 Cupos
+            </div>
+<div class="absolute bottom-space-xs left-space-xs bg-secondary-fixed text-on-secondary-fixed px-space-sm py-0.5 rounded-full font-label-md text-label-md shadow-sm">
+              Extracción
+            </div>
+</div>
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Viernes, 3 Noviembre • 18:00</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-espresso-noir mb-space-xs">
+            Métodos Filtrados en Casa
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-space-md">
+            Dominio de V60, Chemex y Aeropress. Calibración de molienda, mineralización de agua y curvas de extracción para su propio hogar.
+          </p>
+<div class="pt-space-sm mt-auto flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-espresso-noir">$85.000<span class="font-body-sm text-body-sm text-warm-taupe"> /pers.</span></span>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-espresso-noir font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" onclick="prefillExperience('Métodos Filtrados en Casa')">
+              Inscribirme
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Formulario de Reserva Interactivo y Muro de Salón -->
+<section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin pb-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Atmosphere Card & Visual Ritual (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-space-xs text-warm-taupe mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">room_service</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Protocolo de la Casa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-espresso-noir mb-space-sm">
+              El Arte de Ser Recibido
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              En Café Rococó cada mesa es preparada con plata bruñida, flores frescas matutinas y cartas tipografiadas a mano. Le reservamos su espacio por un período de dos horas de pura indulgencia.
+            </p>
+<!-- Decorative Visual Polar Compass of Flavor -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-inner mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir">Ritual del Salón Privé</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">temp_preferences_custom</span>
+</div>
+<p class="font-body-sm text-body-sm text-warm-taupe mb-space-sm">Garantía de confort acústico, vajilla Limoges y agua purificada con perfil mineral para café.</p>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-espresso-noir">Sin prisa ni turnos dobles</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-espresso-noir">Servicio de Sommelier</span>
+</div>
+</div>
+</div>
+<!-- Salon image -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden shadow-sm">
+<img alt="An exquisite high-end Parisian rococo tea and coffee salon with upholstered powder pink velvet chairs, pale turquoise paneled boiserie walls, crystal chandelier, afternoon sunlight streaming through tall arched windows." class="w-full h-full object-cover" data-alt="An exquisite high-end Parisian rococo tea and coffee salon with upholstered powder pink velvet chairs, pale turquoise paneled boiserie walls, crystal chandelier, afternoon sunlight streaming through tall arched windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwW3OwnICmJl24zwAWqDwBUI_S76kAnUzZUSwDlaogZC_V_3x0amlMD_27xOx6WOrdW9qXW1wx5z-gjwU2mUNdtkAqahYoDvUry7Lp_VXkyVHX7_jFKwfKogdLiBe_KSpE5CM9iynRCxKTYmRt-uTstgovtK3evn2Epc_X-KzWyikpW-BCJKEjHx88WZbLYR3KRNjbsjajfT7GLPUGMqLH2V1vyoQUFfOKApDdKlk">
+<div class="absolute inset-0 bg-gradient-to-t from-espresso-noir/50 via-transparent to-transparent flex items-end p-space-md">
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest italic">«Le calme, le parfum, le goût»</span>
+</div>
+</div>
+<!-- Avisos de Días de Salón -->
+<div class="mt-space-md bg-secondary-container/40 p-space-sm rounded-lg flex items-center gap-space-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<p class="font-body-sm text-body-sm">
+<span class="font-semibold">Nota bene:</span> Los lunes descansan nuestros maestros tostadores. El salón opera de martes a domingo.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Booking Form (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-xl shadow-lg relative">
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">Solicitud de Salón</span>
+<h3 class="font-headline-md text-headline-md text-espresso-noir">Reservar Mesa de Degustación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Complete los detalles para coordinar su servicio personal. Las reservas se confirman al instante vía enlace de cortesía.
+            </p>
+</div>
+<form class="flex flex-col gap-space-md" id="reservationForm" onsubmit="handleReservationSubmit(event)">
+<!-- Nombre & Teléfono -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir flex items-center justify-between" for="fullName">
+<span class="">Nombre Completo</span>
+<span class="text-error font-normal text-xs">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm bg-surface rounded-lg font-body-md text-body-md text-espresso-noir placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-inner" id="fullName" name="fullName" placeholder="Ej. Marie Antoinette de Valois" required="" type="text">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir flex items-center justify-between" for="phone">
+<span class="">WhatsApp / Teléfono</span>
+<span class="text-error font-normal text-xs">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm bg-surface rounded-lg font-body-md text-body-md text-espresso-noir placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-inner" id="phone" name="phone" placeholder="+57 310 555 0124" required="" type="tel">
+</div>
+</div>
+<!-- Email & Comensales -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir flex items-center justify-between" for="email">
+<span class="">Correo Electrónico</span>
+<span class="text-error font-normal text-xs">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm bg-surface rounded-lg font-body-md text-body-md text-espresso-noir placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-inner" id="email" name="email" placeholder="su.correo@palais.art" required="" type="email">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir flex items-center justify-between">
+<span class="">Número de Comensales</span>
+<span class="font-semibold text-secondary" id="guestCountDisplay">2 Personas</span>
+</label>
+<!-- Guest count pills selector 1 to 8 -->
+<div class="grid grid-cols-8 gap-1 p-1 bg-surface rounded-lg shadow-inner">
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(1)" type="button">1</button>
+<button class="guest-btn active py-1.5 rounded text-center font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold transition-colors" onclick="selectGuests(2)" type="button">2</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(3)" type="button">3</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(4)" type="button">4</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(5)" type="button">5</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(6)" type="button">6</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(7)" type="button">7</button>
+<button class="guest-btn py-1.5 rounded text-center font-label-md text-label-md text-espresso-noir transition-colors" onclick="selectGuests(8)" type="button">8</button>
+</div>
+<input id="guestsHidden" name="guests" type="hidden" value="2">
+</div>
+</div>
+<!-- Ocasión Selector (Cards) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir">
+                Ocasión de Visita
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer">
+<input checked="" class="peer hidden" name="occasion" type="radio" value="Cita Íntima">
+<div class="p-space-sm rounded-lg bg-surface peer-checked:bg-primary-container peer-checked:shadow-sm text-center transition-all flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-espresso-noir">favorite</span>
+<span class="font-label-md text-label-md text-espresso-noir">Cita Íntima</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="occasion" type="radio" value="Reunión de Té">
+<div class="p-space-sm rounded-lg bg-surface peer-checked:bg-primary-container peer-checked:shadow-sm text-center transition-all flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-espresso-noir">emoji_food_beverage</span>
+<span class="font-label-md text-label-md text-espresso-noir">Reunión de Té</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="occasion" type="radio" value="Celebración Especial">
+<div class="p-space-sm rounded-lg bg-surface peer-checked:bg-primary-container peer-checked:shadow-sm text-center transition-all flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-espresso-noir">celebration</span>
+<span class="font-label-md text-label-md text-espresso-noir">Celebración</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Selector de Fecha y Turno -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir flex items-center justify-between" for="resDate">
+<span class="">Fecha de Visita</span>
+<span class="text-warm-taupe font-normal text-xs">(Mar a Dom)</span>
+</label>
+<input class="w-full px-space-md py-space-sm bg-surface rounded-lg font-body-md text-body-md text-espresso-noir focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-inner" id="resDate" min="2025-01-01" name="date" onchange="checkMonday(this)" required="" type="date">
+<span class="hidden text-error font-label-sm text-label-sm mt-1" id="mondayAlert">Los lunes el salón permanece cerrado por tostión. Seleccione otro día.</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir">
+                  Turno Seleccionado
+                </label>
+<div class="grid grid-cols-3 gap-1 bg-surface p-1 rounded-lg shadow-inner">
+<label class="cursor-pointer">
+<input checked="" class="peer hidden" name="shift" type="radio" value="Mañana (09:00 - 12:30)">
+<div class="py-2 px-1 text-center rounded peer-checked:bg-secondary-container peer-checked:text-espresso-noir text-on-surface-variant font-label-sm text-label-sm transition-all">
+                      Mañana
+                    </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="shift" type="radio" value="Tarde (13:00 - 16:30)">
+<div class="py-2 px-1 text-center rounded peer-checked:bg-secondary-container peer-checked:text-espresso-noir text-on-surface-variant font-label-sm text-label-sm transition-all">
+                      Tarde
+                    </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="shift" type="radio" value="Velada de Té (17:00 - 20:30)">
+<div class="py-2 px-1 text-center rounded peer-checked:bg-secondary-container peer-checked:text-espresso-noir text-on-surface-variant font-label-sm text-label-sm transition-all">
+                      Velada Té
+                    </div>
+</label>
+</div>
+</div>
+</div>
+<!-- Peticiones especiales o requerimientos dietéticos -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-espresso-noir" for="notes">
+                Peticiones Especiales o Requerimientos Dietéticos
+              </label>
+<textarea class="w-full px-space-md py-space-sm bg-surface rounded-lg font-body-md text-body-md text-espresso-noir placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-inner resize-none" id="notes" name="notes" placeholder="Alergias a frutos secos, preferencia por leches vegetales, mesa junto a la ventana, o experiencia que desea vincular..." rows="3"></textarea>
+</div>
+<!-- CTA Confirm Button -->
+<div class="flex items-start gap-space-xs"><input id="privacyConsent" name="privacyConsent" required="" type="checkbox" class="mt-1 rounded text-primary focus:ring-secondary/40 cursor-pointer"><label for="privacyConsent" class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer">He leído y acepto la <a href="politica-de-privacidad.html" class="underline text-espresso-noir hover:text-secondary font-semibold transition-colors">Política de Privacidad</a> y el tratamiento de mis datos personales conforme a la ley de protección de datos (Habeas Data). <span class="text-error">*</span></label></div><div class="pt-space-xs">
+<button class="w-full py-space-md px-space-xl bg-primary-container text-espresso-noir rounded-full font-label-lg text-label-lg uppercase tracking-widest shadow-md hover:bg-primary-fixed hover:shadow-lg transition-all flex items-center justify-center gap-space-sm group" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12">local_cafe</span>
+<span class="">Confirmar Reserva</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-warm-taupe mt-space-xs">
+                ❦ Recibirá confirmación digital inmediata y detalle de bienvenida en su WhatsApp ❦
+              </p><div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg border-b border-warm-taupe/10 text-center font-body-sm text-body-sm text-warm-taupe"><span class="font-semibold text-espresso-noir">Políticas de Cancelación &amp; Términos:</span> Cancelaciones gratuitas hasta 24 horas antes del evento o reserva. Los precios y disponibilidad de lotes pueden variar sin previo aviso.</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Experiencia Salón & Faq Minimalista -->
+<section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin pb-space-xl w-full">
+<div class="bg-surface-container-high rounded-xl p-space-lg lg:p-space-xl shadow-sm">
+<div class="max-w-3xl mx-auto text-center mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">Condiciones de Placer &amp; Gracia</span>
+<h2 class="font-headline-md text-headline-md text-espresso-noir mt-space-xs">Preguntas Frecuentes del Salón</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined">schedule</span>
+<h4 class="font-headline-sm text-headline-sm text-espresso-noir">Tiempos de Cortesía</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mantenemos su mesa guardada durante 15 minutos tras el turno pautado. Si sufriese alguna demora imprevista, avísenos vía WhatsApp para preservar su lugar.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined">cake</span>
+<h4 class="font-headline-sm text-headline-sm text-espresso-noir">Opciones Veganas &amp; Gluten-Free</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Toda nuestra repostería cuenta con alternativas libres de gluten y preparaciones con leches artesanales de almendra y avena emulsionadas al momento.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined">lock_clock</span>
+<h4 class="font-headline-sm text-headline-sm text-espresso-noir">Eventos &amp; Salón Privado</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Para celebraciones de más de 8 personas o reserva íntegra del gabinete Rococó para aniversarios, indíquelo en notas para coordinar una propuesta a medida.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- MODAL DE CONFIRMACIÓN INSTANTÁNEA -->
+<div class="fixed inset-0 z-50 bg-espresso-noir/60 backdrop-blur-sm flex items-center justify-center p-margin-mobile opacity-0 pointer-events-none transition-opacity duration-300" id="confirmationModal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-space-lg lg:p-space-xl shadow-2xl relative transform scale-95 transition-transform duration-300" id="modalCard">
+<!-- Close Button -->
+<button class="absolute top-space-md right-space-md w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-espresso-noir hover:bg-primary-container transition-colors" onclick="closeConfirmationModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="text-center">
+<!-- Rococo Monogram Seal -->
+<div class="w-16 h-16 rounded-full bg-primary-container text-espresso-noir mx-auto flex items-center justify-center shadow-md mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">¡Su Lugar Está Reservado!</span>
+<h3 class="font-headline-md text-headline-md text-espresso-noir mt-1">Confirmación Ilustre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Hemos inscrito sus datos en el libro de ceremonias del atelier.
+        </p>
+<!-- Simulated Reservation Receipt Box -->
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-xl text-left shadow-inner space-y-space-xs">
+<div class="flex items-center justify-between pb-space-xs border-b border-warm-taupe/10">
+<span class="font-label-sm text-label-sm uppercase text-warm-taupe">Folio Real</span>
+<span class="font-mono font-semibold text-secondary" id="modalBookingId">#RC-84920</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-warm-taupe">Anfitrión:</span>
+<span class="font-body-md text-body-md font-semibold text-espresso-noir" id="modalName">Marie Antoinette</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-warm-taupe">Fecha &amp; Turno:</span>
+<span class="font-body-sm text-body-sm text-espresso-noir font-medium" id="modalDateTime">12 Oct 2025 • Tarde</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-warm-taupe">Comensales:</span>
+<span class="font-body-sm text-body-sm text-espresso-noir font-medium" id="modalGuests">2 Invitados</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-warm-taupe">Ocasión:</span>
+<span class="font-body-sm text-body-sm text-espresso-noir font-medium" id="modalOccasion">Cita Íntima</span>
+</div>
+</div>
+<!-- WhatsApp Dispatch Simulation Notification -->
+<div class="mt-space-md p-space-sm rounded-lg bg-tertiary-container/30 text-on-tertiary-container flex items-center gap-space-sm text-left">
+<span class="material-symbols-outlined text-[24px] text-tertiary">chat</span>
+<div class="text-xs">
+<span class="font-semibold block">Notificación por WhatsApp Enviada</span>
+<span class="">Comprobante digital y tarjeta de cortesía remitidos a <strong id="modalPhoneTarget">+57 310...</strong></span>
+</div>
+</div>
+<button class="w-full mt-space-lg py-space-sm px-space-md rounded-full bg-espresso-noir text-surface-container-lowest font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors" onclick="closeConfirmationModal()">
+          Cerrar &amp; Guardar Comprobante
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions & Logic -->
+<script>
+    function selectGuests(count) {
+      document.getElementById('guestsHidden').value = count;
+      document.getElementById('guestCountDisplay').innerText = count + (count === 1 ? ' Persona' : ' Personas');
+      
+      const buttons = document.querySelectorAll('.guest-btn');
+      buttons.forEach((btn, idx) => {
+        if (idx + 1 === count) {
+          btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          btn.classList.remove('text-espresso-noir');
+        } else {
+          btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          btn.classList.add('text-espresso-noir');
+        }
+      });
+    }
+
+    function checkMonday(input) {
+      const selected = new Date(input.value);
+      // In JS: 0=Sun, 1=Mon
+      const alertEl = document.getElementById('mondayAlert');
+      if (selected.getUTCDay() === 1) {
+        alertEl.classList.remove('hidden');
+        input.value = '';
+      } else {
+        alertEl.classList.add('hidden');
+      }
+    }
+
+    function prefillExperience(title) {
+      const notesField = document.getElementById('notes');
+      notesField.value = 'Inscripción para la actividad de salón: ' + title;
+      // Scroll seamlessly to form
+      document.getElementById('reservationForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      notesField.focus();
+    }
+
+    function handleReservationSubmit(event) {
+      event.preventDefault();
+      
+      const form = event.target;
+      const name = form.fullName.value;
+      const phone = form.phone.value;
+      const date = form.date.value || 'Por acordar';
+      const guests = form.guests.value;
+      const occasion = form.occasion.value;
+      const shift = form.shift.value.split(' ')[0];
+
+      // Generate random simulated booking folio
+      const randomFolio = '#RC-' + Math.floor(10000 + Math.random() * 90000);
+
+      // Populate Modal Fields
+      document.getElementById('modalBookingId').innerText = randomFolio;
+      document.getElementById('modalName').innerText = name;
+      document.getElementById('modalDateTime').innerText = date + ' (' + shift + ')';
+      document.getElementById('modalGuests').innerText = guests + (guests == '1' ? ' Persona' : ' Personas');
+      document.getElementById('modalOccasion').innerText = occasion;
+      document.getElementById('modalPhoneTarget').innerText = phone;
+
+      // Show Modal with Animation
+      const modal = document.getElementById('confirmationModal');
+      const modalCard = document.getElementById('modalCard');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+    }
+
+    function closeConfirmationModal() {
+      const modal = document.getElementById('confirmationModal');
+      const modalCard = document.getElementById('modalCard');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+      document.getElementById('reservationForm').reset();
+      selectGuests(2);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface shadow-[0_-8px_32px_rgba(45,36,34,0.04)]"><div class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="flex items-center justify-center gap-space-md pb-space-lg"><div class="h-px w-24 bg-surface-variant"></div><span class="font-headline-sm text-headline-sm text-warm-taupe italic font-normal tracking-wider">❦ L'Art du Café ❦</span><div class="h-px w-24 bg-surface-variant"></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Café Rococó Emblem" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDROi57G5pizNj8hE-WLCTyKhMIXsnie4I5uRC18YCbZbZDZ25xax2e6nSFV3lkIiKKiEhRF-5rcjn-qCPVVOVpua8jFVFV_f1RIg4Pl1GdS8tn0XvT3m7PZvWI8rOWECwmI6Fnh5Imf3WBGSH9Fdl7lL5ROG-RN-QA8AqE5qiE4umJAhGLWrA3QJ1bhymAl_EdQMrcQpdf-3d7jE0mhAveryr-CfIqI0eerlX-UbE"><span class="font-headline-sm text-headline-sm text-espresso-noir">Café Rococó</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Un salon de café exquisitamente curado donde la elegancia dieciochesca y las cosechas de café de especialidad celebran la voluptuosidad y el buen gusto.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-warm-taupe">Usaquén, Bogotá • Alta Cafetería</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-espresso-noir">Horario de Salón</h4><ul class="font-body-sm text-body-sm text-on-surface-variant space-y-space-xs"><li class=""><span class="font-semibold text-espresso-noir">Lunes a Viernes:</span> 08:00 — 20:30</li><li class=""><span class="font-semibold text-espresso-noir">Sábados y Domingos:</span> 09:00 — 22:00</li><li class=""><span class="font-semibold text-espresso-noir">Té de la Tarde:</span> 16:00 — 18:30</li><li class=""><span class="font-semibold text-espresso-noir">Salon Privé:</span> Con reserva previa</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-espresso-noir">Santuario &amp; Cartas</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Calle 119 # 6-24 • Usaquén</p><p class="font-body-sm text-body-sm text-on-surface-variant">contacto@caferococo.com.co</p><p class="font-body-sm text-body-sm text-on-surface-variant">+57 601 745 3210</p><div class="flex items-center gap-space-sm pt-space-xs text-warm-taupe"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="material-symbols-outlined text-[20px]">history_edu</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-espresso-noir">Gazette Rococo</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Reciba crónicas de orígenes exclusivos, cosechas estacionales e invitaciones a catas privadas.</p><form action="#" class="flex flex-col gap-space-xs mt-space-xs" onsubmit="return false;"><input class="w-full px-space-md py-space-sm bg-surface-container-lowest text-espresso-noir font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-warm-taupe placeholder:text-outline-variant" placeholder="Su correo ilustre..." type="email"><button class="w-full py-space-sm px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-secondary-container hover:text-on-secondary-container transition-all" type="submit">Suscribirse</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex flex-col gap-1 text-center md:text-left"><p class="">© 2025 Café Rococó Atelier S.A.S. • NIT: 901.482.930-1. Todos los derechos reservados.</p><p class="text-xs text-warm-taupe">Dirección: Calle 119 # 6-24 • Usaquén | Atención legal y soporte: <a href="mailto:legal@caferococo.com.co" class="underline hover:text-secondary">legal@caferococo.com.co</a></p></div><div class="flex flex-wrap items-center justify-center gap-space-md lg:gap-space-lg"><a class="hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="politica-de-privacidad.html">Privacidad</a><a class="hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="terminos-y-condiciones.html">Términos del Salón</a><a class="hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="politica-de-privacidad.html#cookies">Aviso de Cookies</a><a class="hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="menu.html">Guía de Cata</a></div></div></div></footer>
+
+<script src="site.js"></script>
+</body></html>
