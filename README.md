@@ -27,15 +27,3 @@ Todo el comportamiento compartido está en `site.js`; el número de WhatsApp y e
 ## Tecnología
 
 HTML estático con [Tailwind CSS](https://tailwindcss.com) (CDN) y JavaScript sin dependencias. No requiere compilación. El sistema de diseño está documentado en `rococo_pastiche/DESIGN.md`.
-
-## Ejecutar en local
-
-```bash
-python -m http.server 8090
-```
-
-Luego abre http://localhost:8090.
-
-## Despliegue
-
-Al ser un sitio estático, funciona en GitHub Pages (Settings → Pages → rama `main`, carpeta `/root`), Netlify o Vercel sin configuración adicional.
